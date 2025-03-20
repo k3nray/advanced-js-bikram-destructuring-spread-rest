@@ -6,22 +6,25 @@ const empleados = [
   { name: "Andrea", email: "Andrea@gmail.com" },
 ];
 
-const ana = empleados.find((nombre) => nombre.name === "Ana");
+//const ana = empleados.find((nombre) => nombre.name === "Ana");console.log(ana);
+const [, ana] = empleados;
 console.log(ana);
+
 
 //- [ ] 2.- Dado el objeto **empleados**, extrae el email del empleado Luis --> Luis@gmail.com
 
-const emailLuis = empleados.find(
-  (mail) => mail.email === "Luis@gmail.com"
-)?.email;
-console.log(emailLuis);
+const [nombre] = empleados;
+console.log(nombre);
+
+
 
 //- [ ] 3.- Usa destructuración para cambiar los valores de a y b;
 const { a = 5, b = 3 } = { a: 3, b: 5 };
 console.log(a);
 
 //- [ ] 4.- Dado el objeto **HIGH_TEMPERATURES**
-
+/*Cambiar las siguientes líneas para guardar mediante destructuración
+los valores de temperaturas en las variables maximaHoy y maximaManana*/
 const HIGH_TEMPERATURES = {
   yesterday: 30,
   today: 35,
@@ -31,8 +34,6 @@ const { today: maximaHoy, tomorrow: maximaManana } = HIGH_TEMPERATURES;
 console.log(maximaHoy);
 console.log(maximaManana);
 
-/*Cambiar las siguientes líneas para guardar mediante destructuración
-los valores de temperaturas en las variables maximaHoy y maximaManana*/
 
 /*- [ ] 5.- Escribe una función llamada **sumEveryOther** que pueda
  recibir cualquier cantidad de números y devuelva la suma de todos 
