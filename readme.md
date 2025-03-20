@@ -73,6 +73,8 @@ sumEveryOther(11, 3, 12); //26
 addOnlyNums(1, "perro", 2, 4); //7
 ```
 
+const 
+
 
 - [ ] 7.- Escribe una función llamada **countTheArgs** que pueda recibir cualquier número de argumentos y devuelva un número que indique cuántos argumentos ha recibido.
 
@@ -98,3 +100,4 @@ combineAllArrays([2, 7, 3, 1], [2, 7, 4, 12], [2, 44, 22, 7, 3, 1]); // [2, 7, 3
 ```
 
 - [ ] 11.- Escriba una función llamada **sumAndSquare** que reciba cualquier número de argumentos, los eleve al cuadrado y devuelva la suma de todos los valores cuadrados.
+
